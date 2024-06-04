@@ -98,75 +98,26 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 2rem;
+  padding: 5rem;
+  box-shadow: 0px 0px 0px 2px #02ac79;
+  transition: box-shadow 0.3s linear;
+  border-radius: 10px;
+  margin: 0.5em;
 }
 
-/* animacija */
-@keyframes bg {
-  0% {
-      background-size:    0 3px,
-                          3px 0,
-                          0 3px,
-                          3px 0;
-  }
-  25% {
-      background-size:    100% 3px,
-                          3px 0,
-                          0 3px,
-                          3px 0;
-  }
-  50% {
-      background-size:    100% 3px,
-                          3px 100%,
-                          0 3px,
-                          3px 0;
-  }
-  75% {
-      background-size:    100% 3px,
-                          3px 100%,
-                          100% 3px,
-                          3px 0;
-  }
-  100% {
-      background-size:    100% 3px,
-                          3px 100%,
-                          100% 3px,
-                          3px 100%;
-  }
-}
-
-.abt-flex {
-  width: 100%;
-  margin: 2rem auto;
-  padding: 2em;
-  
-  background-repeat: no-repeat;
-  background-image:   linear-gradient(to right, #46c900 100%, #46c900 100%),
-                      linear-gradient(to bottom, #46c900 100%, #46c900 100%),
-                      linear-gradient(to right, #46c900 100%, #46c900 100%),
-                      linear-gradient(to bottom, #46c900 100%, #46c900 100%);
-  background-size:    100% 3px,
-                      3px 100%,
-                      100% 3px,
-                      3px 100%;
-  background-position:    0 0,
-                          100% 0,
-                          100% 100%,
-                          0 100%;
-  animation: bg 1.25s cubic-bezier(0.19, 1, 0.22, 1) 1;
-  animation-play-state: paused;
+.abt-flex span {
+  text-decoration: underline 0.15em rgba(2, 172, 121, 0);
+  text-underline-offset: 0.2em;
+  transition: text-decoration-color 300ms, text-underline-offset 300ms;
 }
 
 .abt-flex:hover {
-  animation-play-state: running;
-  span{
-    color: #46c900;
-    text-decoration: underline;
-    transition: 1.25s;
+  box-shadow: 0px 0px 0px 13px #02ac79;
+  span {
+    text-decoration-color:rgba(2, 172, 121, 1);
   }
 }
 
-/* animacija end */
 
 .abt-txt {
   margin-right: 2rem;
