@@ -43,6 +43,10 @@
     </header>
 
     <section class="about-us">
+      <div class="abt-us-intro">
+        <h1>You might ask yourself...</h1>
+        <h2>Why do I need these guys?</h2>
+      </div>
       <div class="abt-container">
         <div class="abt-flex">
           <div class="abt-txt">
@@ -197,10 +201,29 @@
           <p>Training for Business Assistant with Basics of Finance and HR</p>
         </div>
         <div class="course-card">
-          <img src="./financial management.jpg" alt="">
+          <img src="./financial management.jpg" alt="" />
           <p>Hospitality Financial Management Solutions</p>
         </div>
       </div>
     </section>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("in-view");
+              } else {
+                entry.target.classList.remove("in-view");
+              }
+            });
+          },
+          { rootMargin: "0px 0px -550px 0px" }
+        );
+
+        const abtFlexElements = document.querySelectorAll(".abt-flex");
+        abtFlexElements.forEach((el) => observer.observe(el));
+      });
+    </script>
   </body>
 </html>
