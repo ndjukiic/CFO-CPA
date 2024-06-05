@@ -144,37 +144,37 @@ h1 {
   box-shadow: 8px 8px 2px rgba(0, 0, 0, 0.5);
 }
 
-.offers h1 {
+.services h1 {
   text-align: center;
   font-size: 2rem;
   text-shadow: 4px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.offers-text {
+.services-text {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 5rem;
 }
 
-.offers-text span {
+.services-text span {
   margin: 0 2rem;
   text-decoration: underline 0.15em rgba(2, 172, 121, 0);
   text-underline-offset: 0.2em;
   transition: text-decoration-color 300ms, text-underline-offset 300ms;
 }
 
-.offers-text:hover span {
+.services-text:hover span {
   text-decoration-color: rgba(2, 172, 121, 1);
 }
 
-.offers-container-grid {
+.services-container-grid {
   margin: 3rem 0;
   display: grid;
   grid-template-columns: 50% 50%;
 }
 
-.offers-card-grid {
+.services-card-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -182,7 +182,7 @@ h1 {
   grid-row-gap: 2rem;
 }
 
-.offer-card {
+.services-card {
   display: flex;
   flex-direction: column;
   padding: 2.5rem;
@@ -192,17 +192,17 @@ h1 {
   transition: 0.5s;
 }
 
-.offer-card:hover {
+.services-card:hover {
   border-radius: 15px; 
   transform: scale(1.15);
   background-color: rgba(206, 206, 206, 1);
   transition: 0.5s;
-  .offer-txt span {
+  .services-txt span {
     text-decoration-color: rgba(2, 172, 121, 1);
   }
 }
 
-.offer-img {
+.services-img {
   display: flex;
   width: 100%;
   height: 100%;
@@ -210,7 +210,7 @@ h1 {
   align-items: center;
 }
 
-.offer-txt {
+.services-txt {
   width: 100%;
   font-size: 1.25rem;
   font-weight: 700;
