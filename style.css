@@ -6,6 +6,16 @@ html {
   overflow-x: hidden;
   background-color: #eeeeee;
   color: #151515;
+  scroll-behavior: smooth;
+}
+
+#us,
+#services,
+#courses,
+#difference,
+#meet-us,
+#contact {
+  scroll-margin-top: 9rem;
 }
 
 h1 {
@@ -21,6 +31,7 @@ h1 {
   left: 0;
   width: 100vw;
   height: auto;
+  padding: 0.5rem 0;
   background: #a91d3a;
   color: #eeeeee;
   text-shadow: 2px 1px 1px #151515;
@@ -46,6 +57,22 @@ h1 {
   list-style: none;
   display: flex;
   flex-direction: row;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navigation li:after {
+  display: block;
+  content: "";
+  border-bottom: solid 5px #151515;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+.navigation li:hover:after {
+  transform: scaleX(1);
 }
 
 .backdrop {
@@ -166,7 +193,7 @@ h1 {
   box-shadow: 8px 8px 2px rgba(0, 0, 0, 0.5);
 }
 
-.services{
+.services {
   margin-bottom: 10rem;
 }
 
@@ -177,20 +204,21 @@ h1 {
   margin-bottom: 4rem;
 }
 
-.services-1{
+.services-1 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 
 .services-grid {
   display: grid;
   grid-template-columns: 50% 50%;
 }
 
-.services-2{
+.services-2 {
   padding: 3rem 7rem;
-  border-left: 5px solid #A91D3A;
+  border-left: 5px solid #a91d3a;
 }
 
 .services-list {
@@ -200,16 +228,16 @@ h1 {
 .services-list li {
   display: grid;
   grid-template-columns: 20% 70%;
-  background: linear-gradient(#C73659, #A91D3A);
+  background: linear-gradient(#c73659, #a91d3a);
   border: 4px solid rgba(21, 21, 21, 0.7);
   border-radius: 15px;
   margin: 1rem;
   padding: 1.25rem 0;
   font-weight: 700;
-  color: #EEEEEE;
+  color: #eeeeee;
 }
 
-.services-list img{
+.services-list img {
   margin: 0 auto;
 }
 
@@ -392,7 +420,7 @@ h1 {
   box-shadow: 8px 8px 2px rgba(0, 0, 0, 0.5);
 }
 
-.contact {
+/* .contact {
   border-top: 4px solid #c73659;
   background: #a91d3a;
   color: #eeeeee;
@@ -471,4 +499,56 @@ h1 {
   float: left;
   width: 100%;
   height: 400px;
+} */
+
+.contact {
+  background: #151515;
+  padding: 4rem 10rem;
+  color: #EEEEEE;
+  border-top: 4px solid #a91d3a;
+  p {
+    margin: 0;
+  }
+}
+
+.contact-flexbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contact-flexbox ul {
+  list-style: none;
+  padding: 0;
+  a {
+    text-decoration: none;
+    color: #EEEEEE;
+  }
+}
+
+.contact-nav {
+  margin: 0 5rem;
+}
+.contact-options {
+  margin: 0 5rem;
+}
+.contact-socials {
+  margin: 0 5rem;
+}
+
+.contact-list {
+  font-size: 1.25rem;
+}
+
+.contact-options p,
+.contact-socials p,
+#homepage-link {
+  font-size: 2.5rem;
+  border-bottom: 2px solid #a91d3a;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.contact-flexbox li {
+  margin: 0.5rem 0;
 }

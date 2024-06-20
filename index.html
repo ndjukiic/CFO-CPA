@@ -24,13 +24,12 @@
       </div>
       <nav class="navigation">
         <ul>
-          <li>About us</li>
-          <li>Who we are</li>
-          <li>why are we different</li>
-          <li>services</li>
-          <li>courses</li>
-          <li>news</li>
-          <li>contact us</li>
+          <a href="#us"><li>About us</li></a>
+          <a href="#services"><li>Our services</li></a>
+          <a href="#courses"><li>Our courses</li></a>
+          <a href="#difference"><li>Global Advantage</li></a>
+          <a href="#meet-us"><li>Meet Us</li></a>
+          <a href="#contact"><li>Contact Us</li></a>
         </ul>
       </nav>
       <nav class="socials">
@@ -42,7 +41,7 @@
       </nav>
     </header>
 
-    <section class="about-us">
+    <section class="about-us" id="us">
       <div class="abt-us-intro">
         <h1>You might ask yourself...</h1>
         <h2>Why do I need these guys?</h2>
@@ -82,7 +81,7 @@
       </div>
     </section>
 
-    <section class="services">
+    <section class="services" id="services">
       <h1>What do we do?</h1>
       <div class="services-grid">
         <div class="services-1">
@@ -144,7 +143,13 @@
               />
               <p>Corporate law services</p>
             </li>
-            <li><img width="50" height="50" src="https://img.icons8.com/ios/50/EEEEEE/ctrl.png" alt="ctrl"/>
+            <li>
+              <img
+                width="50"
+                height="50"
+                src="https://img.icons8.com/ios/50/EEEEEE/ctrl.png"
+                alt="ctrl"
+              />
               <p>Internal control</p>
             </li>
           </ul>
@@ -152,7 +157,7 @@
       </div>
     </section>
 
-    <section class="courses">
+    <section class="courses" id="courses">
       <h1>Our courses</h1>
       <div class="course-grid">
         <div class="course-card">
@@ -166,7 +171,7 @@
       </div>
     </section>
 
-    <section class="why">
+    <section class="why" id="difference">
       <div class="why-grid"></div>
       <div class="why-intro-txt">
         <h1>Why are we different?</h1>
@@ -244,7 +249,7 @@
       </div>
     </section>
 
-    <section class="who-are-we">
+    <section class="who-are-we" id="meet-us">
       <div class="we-intro">
         <h1>Who you'll be working with</h1>
       </div>
@@ -303,33 +308,90 @@
       </div>
     </section>
 
-    <section class="contact" id="contact">
-      <div class="contact-grid">
-        <div>
-          <h1>How can you contact us?</h1>
-          <p>Feel free to reach out to us for any inquiries or questions.</p>
-
-          <ul>
-            <li>
-              Email:
-              <a href="">test@test.com</a>
-            </li>
-            <li>Phone: <a href="">+0000000000</a></li>
-            <li>Address: <span>Montenegro</span></li>
+    <section class="contact">
+      <div class="contact-flexbox">
+        <div class="contact-nav">
+          <div id="homepage-link">
+            <a>Max Profit</a>
+          </div>
+          <ul class="contact-list">
+            <a href="#us"><li>About us</li></a>
+            <a href="#services"><li>Our services</li></a>
+            <a href="#courses"><li>Our courses</li></a>
+            <a href="#difference"><li>Global Advantage</li></a>
+            <a href="#meet-us"><li>Meet Us</li></a>
+            <a href="#contact"><li>Contact Us</li></a>
           </ul>
         </div>
-        <div>
-          <div class="map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d750720.5888097596!2d18.734004349538907!3d42.69308389744056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134c3217242c1fcb%3A0x384c9d866effd346!2sMontenegro!5e0!3m2!1sen!2sus!4v1718876659388!5m2!1sen!2sus"
-              width="600"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+        <div class="contact-options">
+          <p>Contact</p>
+          <div>
+            <ul class="contact-list">
+              <li style="display: flex">
+                <img
+                  width="25"
+                  height="25"
+                  src="https://img.icons8.com/ios-filled/50/a91d3a/phone.png"
+                  alt="phone"
+                  style="margin: auto 0.5rem"
+                />
+                <a href="">Phone</a>
+              </li>
+
+              <li style="display: flex">
+                <img
+                  width="25"
+                  height="25"
+                  src="https://img.icons8.com/ios-filled/25/a91d3a/new-post.png"
+                  alt="new-post"
+                  style="margin: auto 0.5rem"
+                />
+                <a href="">E-Mail</a>
+              </li>
+              <li style="display: flex">
+                <img
+                  width="25"
+                  height="25"
+                  src="https://img.icons8.com/ios-filled/25/a91d3a/marker.png"
+                  alt="marker"
+                  style="margin: auto 0.5rem"
+                />
+                <a href="">Location</a>
+              </li>
+            </ul>
           </div>
+        </div>
+        <div class="contact-socials">
+          <p>Socials</p>
+          <ul class="contact-list">
+            <li>
+              <a href=""
+                ><img
+                  width="35"
+                  height="35"
+                  src="https://img.icons8.com/fluency/48/facebook-new.png"
+                  alt="facebook-new"
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img
+                  width="35"
+                  height="35"
+                  src="https://img.icons8.com/fluency/48/instagram-new.png"
+                  alt="instagram-new"
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img
+                  width="35"
+                  height="35"
+                  src="https://img.icons8.com/fluency/48/linkedin.png"
+                  alt="linkedin"
+              /></a>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
