@@ -4,6 +4,8 @@ html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  background-color: #eeeeee;
+  color: #151515;
 }
 
 h1 {
@@ -19,8 +21,9 @@ h1 {
   left: 0;
   width: 100vw;
   height: auto;
-  background: white;
-  color: black;
+  background: #a91d3a;
+  color: #eeeeee;
+  text-shadow: 2px 1px 1px #151515;
   z-index: 98;
 }
 .logo {
@@ -65,14 +68,14 @@ h1 {
 .backdrop h1 {
   margin: 0;
   font-size: 5rem;
-  color: white;
-  text-shadow: 4px 2px 2px rgba(0, 0, 0, 0.3);
+  color: #c73659;
+  text-shadow: 4px 2px 2px #151515;
 }
 
 .backdrop h2 {
   font-size: 2.5rem;
-  color: white;
-  text-shadow: 4px 2px 2px rgba(0, 0, 0, 0.3);
+  color: #c73659;
+  text-shadow: 4px 2px 2px #151515;
 }
 
 .navigation li {
@@ -111,7 +114,7 @@ h1 {
   flex-direction: row;
   justify-content: space-between;
   padding: 5rem;
-  box-shadow: 0px 0px 0px 2px #02ac79;
+  box-shadow: 0px 0px 0px 2px #a91d3a;
   transition: box-shadow 0.3s linear;
   border-radius: 10px;
   margin: 0.5em;
@@ -131,11 +134,11 @@ h1 {
 } */
 
 .abt-flex.in-view {
-  box-shadow: 0px 0px 0px 13px #02ac79;
+  box-shadow: 0px 0px 0px 13px #A91D3A;
 }
 
 .abt-flex.in-view span {
-  text-decoration-color: rgba(2, 172, 121, 1);
+  text-decoration-color: #A91D3A;
 }
 
 .abt-txt {
@@ -185,40 +188,46 @@ h1 {
 }
 
 .services-text:hover span {
-  text-decoration-color: rgba(2, 172, 121, 1);
+  text-decoration-color: #a91d3a;
 }
 
 .services-container-grid {
   margin: 3rem 0;
-  display: grid;
-  grid-template-columns: 50% 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.services-text {
+  padding: 10rem;
 }
 
 .services-card-grid {
+  padding: 1rem 10rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 2rem;
-  grid-row-gap: 2rem;
+  grid-column-gap: 5rem;
+  grid-row-gap: 5rem;
+  margin-bottom: 5rem;
 }
 
 .services-card {
-  display: flex;
-  flex-direction: column;
-  padding: 2.5rem;
-  background-color: rgba(206, 206, 206, 0.3);
-  border-radius: 50%;
-  overflow: visible;
-  transition: 0.5s;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  padding: 1.5rem 0;
+  background-color: #a91d3a;
+  color: #eeeeee;
+  border-radius: 50px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .services-card:hover {
   border-radius: 15px;
   transform: scale(1.15);
-  background-color: rgba(206, 206, 206, 1);
   transition: 0.5s;
   .services-txt span {
-    text-decoration-color: rgba(2, 172, 121, 1);
+    text-decoration-color: #151515;
   }
 }
 
@@ -231,9 +240,8 @@ h1 {
 }
 
 .services-txt {
-  width: 100%;
-  font-size: 1.25rem;
-  font-weight: 700;
+  margin: auto 0;
+  font-size: 1.5rem;
   text-align: center;
   span {
     text-decoration: underline 0.15em rgba(2, 172, 121, 0);
@@ -256,13 +264,13 @@ h1 {
   flex-direction: column;
   margin: 5rem 7rem;
   padding: 3rem 5rem;
-  box-shadow: 0px 0px 0px 2px #02ac79;
+  box-shadow: 0px 0px 0px 2px #A91D3A;
   transition: box-shadow 0.3s linear;
   border-radius: 15px;
 }
 
 .course-card:hover {
-  box-shadow: 0px 0px 0px 13px #02ac79;
+  box-shadow: 0px 0px 0px 13px #A91D3A;
 }
 
 .course-card img {
@@ -297,7 +305,6 @@ h1 {
   margin-left: 7rem;
 }
 
-
 .why-countries {
   padding: 2rem 10rem;
   display: flex;
@@ -315,7 +322,7 @@ h1 {
   text-align: center;
   margin-right: 2rem;
   span {
-    color: #02ac79;
+    color: #A91D3A;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
   }
 }
@@ -339,7 +346,7 @@ h1 {
   display: flex;
   flex-direction: row;
   padding: 2rem 0;
-  border-bottom: 4px solid #02ac79;
+  border-bottom: 4px solid #A91D3A;
 }
 
 .language p {
@@ -351,4 +358,153 @@ h1 {
 .language img {
   text-align: center;
   margin: 0 auto;
+}
+
+.who-are-we{
+  margin-top: 5rem;
+}
+
+.we-intro h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.we-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 20rem;
+}
+
+.we-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5rem;
+  box-shadow: 0px 0px 0px 2px #a91d3a;
+  transition: box-shadow 0.3s linear;
+  border-radius: 10px;
+  margin: 0.5em;
+}
+
+.we-flex span {
+  text-decoration: underline 0.15em rgba(2, 172, 121, 0);
+  text-underline-offset: 0.2em;
+  transition: text-decoration-color 300ms, text-underline-offset 300ms;
+}
+
+.we-flex.in-view {
+  box-shadow: 0px 0px 0px 13px #A91D3A;
+}
+
+.we-flex.in-view span {
+  text-decoration-color: #A91D3A;
+}
+
+.we-txt {
+  margin: auto 0;
+  margin-left: 2rem;
+}
+
+.we-txt h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.we-txt p {
+  font-size: 1.5rem;
+  text-align: left;
+  font-weight: 700;
+}
+
+.we-img {
+  width: 100%;
+}
+
+.we-img img {
+  width: inherit;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 8px 8px 2px rgba(0, 0, 0, 0.5);
+}
+
+.contact {
+  border-top: 4px solid #C73659;
+  background: #A91D3A;
+  color: #EEEEEE;
+  text-shadow: 3px 1px 1px #151515;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+
+.contact h1 {
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+
+.contact p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.contact ul {
+  list-style-type: none;
+  padding-left: 0;
+  text-align: center;
+}
+
+.contact li {
+  font-size: 1.25rem;
+  color: #EEEEEE;
+  margin-bottom: 0.7rem;
+}
+
+.contact li:last-child {
+  margin-bottom: 0;
+}
+
+.contact li a,
+.contact li span {
+  text-decoration: none;
+  color: #151515;
+  text-shadow: none;
+  font-weight: 700;
+}
+
+.contact li a:hover,
+.contact li span:hover {
+  text-decoration: underline;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin: 0 2rem;
+}
+
+.contact-grid h1 {
+  font-size: 3.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.contact-grid p {
+  font-size: 1.5rem;
+}
+
+.map {
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px #151515;
+}
+.map iframe {
+  float: left;
+  width: 100%;
+  height: 400px;
 }

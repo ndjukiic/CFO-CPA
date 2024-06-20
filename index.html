@@ -208,11 +208,10 @@
     </section>
 
     <section class="why">
+      <div class="why-grid"></div>
       <div class="why-intro-txt">
         <h1>Why are we different?</h1>
-        <h2>
-          Our commitment to financial excellence knows no bounds.
-        </h2>
+        <h2>Our commitment to financial excellence knows no bounds.</h2>
       </div>
       <div class="why-countries">
         <div class="why-txt">
@@ -225,8 +224,14 @@
           </h3>
           <h3>
             <div id="txt" class="left">
-              This ensures smooth business operations in <img width="48" height="48" src="https://img.icons8.com/emoji/48/montenegro-emoji.png" alt="montenegro-emoji"/><span id="cg"> Montenegro</span>, even if you
-              do not understand the local language.
+              This ensures smooth business operations in
+              <img
+                width="48"
+                height="48"
+                src="https://img.icons8.com/emoji/48/montenegro-emoji.png"
+                alt="montenegro-emoji"
+              /><span id="cg"> Montenegro</span>, even if you do not understand
+              the local language.
             </div>
           </h3>
         </div>
@@ -279,6 +284,97 @@
         </div>
       </div>
     </section>
+
+    <section class="who-are-we">
+      <div class="we-intro">
+        <h1>Who you'll be working with</h1>
+      </div>
+      <div class="we-container">
+        <div class="we-flex">
+          <div class="we-img">
+            <img
+              src="https://images.pexels.com/photos/6531723/pexels-photo-6531723.jpeg"
+              alt=""
+            />
+          </div>
+          <div class="we-txt">
+            <p>
+              With over 15 years of diverse experience, our founder and main
+              Chief Financial Officer, <span>Milena Braić, PhD</span>, brings a
+              wealth of expertise gained from esteemed positions in
+              <span>renowned Montenegrin companies.</span>
+            </p>
+            <p>
+              Milena's extensive background in
+              <span>financial management, accounting, and corporate law</span>
+              ensures that our clients receive
+              <span>top-notch guidance and support</span> for their business
+              ventures.
+            </p>
+            <p>
+              Remote CFO/CPA provides
+              <span>unparalleled financial services</span> tailored to meet the
+              specific needs of each client.
+            </p>
+            <!-- <p>
+              We provide
+              <span
+                >high-quality finance management, accounting and timely
+                bookkeeping services
+              </span>
+              in accordance with the Accounting and Auditing Law and other
+              relevant regulations of Montenegro.
+            </p>
+            <p>
+              We specialize in
+              <span>remote finance and accounting solutions</span>, servicesing
+              a comprehensive range of services to meet the unique needs of
+              businesses worldwide.
+            </p>
+            <p>
+              Whether you require assistance with
+              <span
+                >financial management, accounting oversight, or corporate law
+                compliance</span
+              >, our team of experts is dedicated to delivering unparalleled
+              excellence.
+            </p> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact-grid">
+        <div>
+          <h1>How can you contact us?</h1>
+          <p>Feel free to reach out to us for any inquiries or questions.</p>
+
+          <ul>
+            <li>
+              Email:
+              <a href="">test@test.com</a>
+            </li>
+            <li>Phone: <a href="">+0000000000</a></li>
+            <li>Address: <span>Montenegro</span></li>
+          </ul>
+        </div>
+        <div>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d750720.5888097596!2d18.734004349538907!3d42.69308389744056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134c3217242c1fcb%3A0x384c9d866effd346!2sMontenegro!5e0!3m2!1sen!2sus!4v1718876659388!5m2!1sen!2sus"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const observer = new IntersectionObserver(
@@ -295,6 +391,24 @@
         );
 
         const abtFlexElements = document.querySelectorAll(".abt-flex");
+        abtFlexElements.forEach((el) => observer.observe(el));
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("in-view");
+              } else {
+                entry.target.classList.remove("in-view");
+              }
+            });
+          },
+          { rootMargin: "0px 0px -550px 0px" }
+        );
+
+        const abtFlexElements = document.querySelectorAll(".we-flex");
         abtFlexElements.forEach((el) => observer.observe(el));
       });
     </script>
