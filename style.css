@@ -841,12 +841,18 @@ h1 {
     font-size: 1.5rem;
   }
 
+  .abt-flex{
+    padding: 2rem 1rem;
+  }
+
   .mobile-nav ul {
     width: 70%;
     margin: 0 auto;
   }
+
   .socials-flex {
-    flex-direction: column;
+    width: 100%;
+    margin-left: 4.2rem;
     li {
       margin: 0;
     }
@@ -877,6 +883,9 @@ h1 {
   }
   .why-txt h3{
     font-size: 1.25rem;
+  }
+  .why-countries{
+    padding: 1rem;
   }
   .we-container{
     padding: 5rem 1rem;
