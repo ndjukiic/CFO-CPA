@@ -743,7 +743,7 @@ h1 {
   .why-countries {
     flex-direction: column;
     padding: 2rem 5rem;
-    h3{
+    h3 {
       margin: 0;
       margin-top: 2rem;
     }
@@ -827,7 +827,7 @@ h1 {
     padding: 4rem 1.5rem;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 600px) {
   .logo a {
     font-size: 1.25rem;
   }
@@ -841,7 +841,7 @@ h1 {
     font-size: 1.5rem;
   }
 
-  .abt-flex{
+  .abt-flex {
     padding: 2rem 1rem;
   }
 
@@ -858,42 +858,42 @@ h1 {
     }
   }
 
-  .services h1{
+  .services h1 {
     font-size: 2rem;
   }
 
-  .services-2{
+  .services-2 {
     padding: 3rem 1rem;
   }
-  .services-list{
+  .services-list {
     padding: 0;
   }
 
-  .courses h1{
+  .courses h1 {
     font-size: 2rem;
   }
-  .course-card{
+  .course-card {
     padding: 1rem;
   }
-  .why-intro-txt h1{
+  .why-intro-txt h1 {
     font-size: 2rem;
   }
-  .why-intro-txt h2{
+  .why-intro-txt h2 {
     font-size: 1.5rem;
   }
-  .why-txt h3{
+  .why-txt h3 {
     font-size: 1.25rem;
   }
-  .why-countries{
+  .why-countries {
     padding: 1rem;
   }
-  .we-container{
+  .we-container {
     padding: 5rem 1rem;
   }
-  .we-intro h1{
+  .we-intro h1 {
     font-size: 2rem;
   }
-  .we-flex{
+  .we-flex {
     padding: 1rem;
   }
 }
