@@ -631,6 +631,7 @@ h1 {
 
   ul {
     list-style: none;
+    padding: 0;
   }
 }
 
@@ -708,7 +709,7 @@ h1 {
     flex-direction: column;
   }
 
-  .course-card{
+  .course-card {
     margin: 2rem 3rem;
   }
 
@@ -735,13 +736,17 @@ h1 {
     justify-content: space-around;
   }
 
-  .why-intro-txt h2{
+  .why-intro-txt h2 {
     margin: 3rem;
   }
 
   .why-countries {
     flex-direction: column;
     padding: 2rem 5rem;
+    h3{
+      margin: 0;
+      margin-top: 2rem;
+    }
   }
 
   .why-countries .right,
@@ -752,7 +757,7 @@ h1 {
     justify-content: space-evenly;
     border-radius: 15px;
   }
-  .language:hover{
+  .language:hover {
     background-color: #a91d3a;
     transition: 0.75s;
   }
@@ -781,43 +786,105 @@ h1 {
     border-left: none;
     padding: 3rem 2rem;
   }
-  .contact{
-    padding:4rem;
+  .contact {
+    padding: 4rem;
   }
-  #homepage-link{
+  #homepage-link {
     text-align: center;
   }
-  .contact-options p,.contact-socials p{
-    text-align:center;
+  .contact-options p,
+  .contact-socials p {
+    text-align: center;
   }
 }
 
-
 @media (max-width: 995px) {
-  .backdrop h1,.abt-us-intro h1{
+  .backdrop h1,
+  .abt-us-intro h1 {
     font-size: 3rem;
   }
-  .backdrop h2,.abt-us-intro h2{
+  .backdrop h2,
+  .abt-us-intro h2 {
     font-size: 2rem;
   }
 
-  .abt-container{padding: 2rem;
-  margin: 5rem 0;}
+  .abt-container {
+    padding: 2rem;
+    margin: 5rem 0;
+  }
 
-  .abt-txt{
+  .abt-txt {
     margin-right: 0;
   }
 
-  .abt-txt h1{
+  .abt-txt h1 {
     font-size: 2rem;
   }
-  .abt-txt p{
+  .abt-txt p {
     font-size: 1.15rem;
   }
-  .contact{
-    padding:4rem 1.5rem;
+  .contact {
+    padding: 4rem 1.5rem;
   }
 }
-@media (max-width: 425px){
-  
+@media (max-width: 425px) {
+  .logo a {
+    font-size: 1.25rem;
+  }
+
+  backdrop h1,
+  .abt-us-intro h1 {
+    font-size: 2rem;
+  }
+  .backdrop h2,
+  .abt-us-intro h2 {
+    font-size: 1.5rem;
+  }
+
+  .mobile-nav ul {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .socials-flex {
+    flex-direction: column;
+    li {
+      margin: 0;
+    }
+  }
+
+  .services h1{
+    font-size: 2rem;
+  }
+
+  .services-2{
+    padding: 3rem 1rem;
+  }
+  .services-list{
+    padding: 0;
+  }
+
+  .courses h1{
+    font-size: 2rem;
+  }
+  .course-card{
+    padding: 1rem;
+  }
+  .why-intro-txt h1{
+    font-size: 2rem;
+  }
+  .why-intro-txt h2{
+    font-size: 1.5rem;
+  }
+  .why-txt h3{
+    font-size: 1.25rem;
+  }
+  .we-container{
+    padding: 5rem 1rem;
+  }
+  .we-intro h1{
+    font-size: 2rem;
+  }
+  .we-flex{
+    padding: 1rem;
+  }
 }
