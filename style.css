@@ -24,19 +24,16 @@ h1 {
 
 .header {
   position: fixed;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: auto;
-  padding: 0.5rem 0;
-  background: #e3a5c7;
-  color: #694f8e;
-  text-shadow: 1px 1px 1px black;
+  background-color: goldenrod;
+  width: 100%;
   z-index: 99;
-  border-bottom: 2px solid #a91d3a;
+}
+
+.navbar-wrapper{
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo {
@@ -66,6 +63,8 @@ h1 {
 }
 
 .header ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
   display: flex;
   flex-direction: row;
