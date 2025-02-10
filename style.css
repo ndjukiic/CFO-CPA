@@ -338,6 +338,7 @@ h1 {
   padding: 2rem 10rem;
   display: flex;
   flex-direction: row;
+  margin-bottom: 5rem;
 }
 
 .why-txt {
